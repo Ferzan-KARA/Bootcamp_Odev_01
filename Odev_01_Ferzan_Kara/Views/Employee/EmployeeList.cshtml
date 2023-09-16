@@ -1,0 +1,31 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<Employee>
+
+<h2>Employees of Northwind</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Job Title</th>
+            <th scope="col">Orders</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Title</td>
+                <td><a href=@Url.Action("EmployeeList","~/Order/OrderList", new{employeeId=employee.EmployeeId})>View Orders</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
