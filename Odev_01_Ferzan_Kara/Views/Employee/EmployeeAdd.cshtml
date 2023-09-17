@@ -1,0 +1,126 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Employee
+
+<div class="text-center">
+    <h2>Add New Employee</h2>
+</div>
+
+
+<form asp-action="EmployeeAdd" method="post" class="mt-2">
+    <div class="form-group row">
+        <label asp-for="LastName" class="col-sm-2 col-form-label">Last Name:</label>
+        <input asp-for="LastName" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="FirstName" class="col-sm-2 col-form-label">First Name:</label>
+        <input asp-for="FirstName" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Title" class="col-sm-2 col-form-label">Title:</label>
+        <input asp-for="Title" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="TitleOfCourtesy" class="col-sm-2 col-form-label">Title Of Courtesy:</label>
+        <input asp-for="TitleOfCourtesy" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="BirthDate" class="col-sm-2 col-form-label">Birth Date:</label>
+        <input asp-for="BirthDate" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="HireDate" class="col-sm-2 col-form-label">Hire Date:</label>
+        <input asp-for="HireDate" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Address" class="col-sm-2 col-form-label">Address:</label>
+        <input asp-for="Address" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="City" class="col-sm-2 col-form-label">City:</label>
+        <input asp-for="City" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Region" class="col-sm-2 col-form-label">Region:</label>
+        <input asp-for="Region" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="PostalCode" class="col-sm-2 col-form-label">Postal Code:</label>
+        <input asp-for="PostalCode" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Country" class="col-sm-2 col-form-label">Country:</label>
+        <input asp-for="Country" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="HomePhone" class="col-sm-2 col-form-label">Home Phone:</label>
+        <input asp-for="HomePhone" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Extension" class="col-sm-2 col-form-label">Extension:</label>
+        <input asp-for="Extension" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="Photo" class="col-sm-2 col-form-label">Photo:</label>
+        <input asp-for="Photo" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="ReportsTo" class="col-sm-2 col-form-label">Reports To:</label>
+        <input asp-for="ReportsTo" />
+    </div>
+    <div class="form-group row">
+        <label asp-for="PhotoPath" class="col-sm-2 col-form-label">Photo Path:</label>
+        <input asp-for="PhotoPath" />
+    </div>
+    <div class="form-group row">
+        <button type="submit" value="EmployeeAdd" class="btn btn-primary">Insert</button>
+    </div>
+</form>
+
+
+
+
+@*<body>
+    <div class="align-content-center">
+        <form asp-action="EmployeeAdd" method="post">
+            <input asp-for="LastName" />
+            <br />
+            <input asp-for="FirstName" />
+            <br />
+            <input asp-for="Title" />
+            <br />
+            <input asp-for="TitleOfCourtesy" />
+            <br />
+            <input asp-for="BirthDate" />
+            <br />
+            <input asp-for="HireDate" />
+            <br />
+            <input asp-for="Address" />
+            <br />
+            <input asp-for="City" />
+            <br />
+            <input asp-for="Region" />
+            <br />
+            <input asp-for="PostalCode" />
+            <br />
+            <input asp-for="Country" />
+            <br />
+            <input asp-for="HomePhone" />
+            <br />
+            <input asp-for="Extension" />
+            <br />
+            <input asp-for="Photo" />
+            <br />
+            <input asp-for="ReportsTo" />
+            <br />
+            <input asp-for="PhotoPath" />
+            <br />
+            <button type="submit" value="EmployeeAdd" class="btn btn-primary">Insert</button>
+        </form>
+    </div>
+</body>*@
+

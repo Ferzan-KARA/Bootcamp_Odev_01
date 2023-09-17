@@ -24,4 +24,3 @@ app.MapControllerRoute(
 
 app.Run();
 
-//public NrthwndContext nrthwndContext = new NrthwndContext();

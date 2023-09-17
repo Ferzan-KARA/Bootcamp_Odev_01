@@ -15,11 +15,23 @@ namespace Odev_01_Ferzan_Kara.Controllers
             return View(employees);
         }
 
-        [HttpPost]
-        [ActionName("AddEmployee")]
+        [HttpGet]
+        //[ActionName("InsertEmployee")]
         public IActionResult EmployeeAdd()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult EmployeeAdd(Employee employee) 
+        {
+                if (ModelState.IsValid)
+                {
+                    northwind.Employees.Add(employee);
+                    northwind.SaveChanges();
+                    return RedirectToAction("EmployeeList");
+                }
+            return View(employee);
         }
     }
 }

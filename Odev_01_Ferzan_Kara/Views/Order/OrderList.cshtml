@@ -6,8 +6,10 @@
 
 @model List<Order>
 
+<div class="text-center">
+    <h2>Orders for Employee ID: @Context.Request.Query["employeeId"]</h2>
+</div>
 
-<h2>Orders for EmployeeID: @Context.Request.Query["employeeId"]</h2>
 
 <table class="table">
     <thead>
